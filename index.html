@@ -5,18 +5,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; text-align: center; }
-        h1 { color: #333; }
-        p { color: #555; font-size: 1.2em; }
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 20px; 
+            display: flex; /* Для центрирования */
+            flex-direction: column; /* Элементы будут друг под другом */
+            align-items: center; /* Центрирование по горизонтали */
+        }
+        
+        /* Стиль для таблицы */
+        .verification-table {
+            margin-top: 30px;
+            width: 500px; /* Фиксированная ширина таблицы */
+            border-collapse: collapse; /* Убирает двойные границы */
+        }
+        
+        /* Стиль для строк таблицы */
+        .verification-table tr {
+            height: 35px; /* Высота строки */
+        }
+        
+        /* Стиль для ячеек-заголовков (левая колонка) */
+        .verification-table td:first-child {
+            font-weight: bold; /* Жирный шрифт для заголовков */
+            text-align: left; /* Текст слева */
+        }
+        
+        /* Стиль для ячеек-значений (правая колонка) */
+        .verification-table td:last-child {
+            text-align: right; /* Текст справа */
+            padding-left: 20px;
+        }
     </style>
 </head>
 <body>
-    <h1>Сообщение по QR-коду</h1>
-    <p>
-        Этот текст был размещен через GitHub Pages.
-    </p>
-    <p>
-        Дата создания: 03.01.2026
-    </p>
+
+    <table class="verification-table">
+        <tr>
+            <td>Name of the training course:</td>
+            <td>Advanced fire fighting</td>
+        </tr>
+        <tr>
+            <td>Number of the certificate:</td>
+            <td>03755/2025</td>
+        </tr>
+        <tr style="height: 15px;"></tr> 
+
+        <tr>
+            <td>Family, given names of the trainee:</td>
+            <td>Aarian Bohomolov</td>
+        </tr>
+        <tr>
+            <td>Date of birth of the trainee:</td>
+            <td>2006-04-04</td>
+        </tr>
+        <tr>
+            <td>ID number of the trainee:</td>
+            <td>891331</td>
+        </tr>
+
+        <tr style="height: 15px;"></tr> 
+        
+        <tr>
+            <td>Date of issue:</td>
+            <td>2025-11-27</td>
+        </tr>
+        <tr>
+            <td>Date of expire:</td>
+            <td>2030-11-27</td>
+        </tr>
+    </table>
+
 </body>
 </html>
