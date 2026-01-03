@@ -1,80 +1,82 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <title>Ваше Сообщение</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body { 
-            font-family: Arial, sans-serif; 
-            margin: 20px; 
-            display: flex; /* Для центрирования */
-            flex-direction: column; /* Элементы будут друг под другом */
-            align-items: center; /* Центрирование по горизонтали */
-        }
-        
-        /* Стиль для таблицы */
-        .verification-table {
-            margin-top: 30px;
-            width: 500px; /* Фиксированная ширина таблицы */
-            border-collapse: collapse; /* Убирает двойные границы */
-        }
-        
-        /* Стиль для строк таблицы */
-        .verification-table tr {
-            height: 35px; /* Высота строки */
-        }
-        
-        /* Стиль для ячеек-заголовков (левая колонка) */
-        .verification-table td:first-child {
-            font-weight: bold; /* Жирный шрифт для заголовков */
-            text-align: left; /* Текст слева */
-        }
-        
-        /* Стиль для ячеек-значений (правая колонка) */
-        .verification-table td:last-child {
-            text-align: right; /* Текст справа */
-            padding-left: 20px;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Certificate example</title>
+  <style>
+    /* Базовая центровка по странице */
+    html,body {
+      height: 100%;
+      margin: 0;
+    }
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      background: #fff;
+      color: #000;
+    }
+
+    /* Контейнер сертификата */
+    .certificate {
+      width: 520px;            /* можно менять под нужный размер */
+      max-width: 90%;
+      text-align: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    /* Заголовки (как на картинке) */
+    .label {
+      font-weight: 700;
+      margin-top: 22px;
+      margin-bottom: 8px;
+      font-size: 18px;
+    }
+
+    /* Значения под заголовками */
+    .value {
+      font-weight: 400;
+      margin-bottom: 12px;
+      font-size: 16px;
+      letter-spacing: 0.2px;
+    }
+
+    /* Первый элемент немного выше по вертикали (как на изображении) */
+    .label:first-of-type {
+      margin-top: 0;
+    }
+
+    /* Немного больше пустого пространства перед и после */
+    .spacer {
+      height: 8px;
+    }
+  </style>
 </head>
 <body>
+  <div class="certificate">
+    <div class="label">Name of the training course:</div>
+    <div class="value">Advanced fire fighting</div>
 
-    <table class="verification-table">
-        <tr>
-            <td>Name of the training course:</td>
-            <td>Advanced fire fighting</td>
-        </tr>
-        <tr>
-            <td>Number of the certificate:</td>
-            <td>03755/2025</td>
-        </tr>
-        <tr style="height: 15px;"></tr> 
+    <div class="label">Number of the sertificate:</div>
+    <div class="value">03755/2025</div>
 
-        <tr>
-            <td>Family, given names of the trainee:</td>
-            <td>Aarian Bohomolov</td>
-        </tr>
-        <tr>
-            <td>Date of birth of the trainee:</td>
-            <td>2006-04-04</td>
-        </tr>
-        <tr>
-            <td>ID number of the trainee:</td>
-            <td>891331</td>
-        </tr>
+    <div class="label">Family, given names of the trainee:</div>
+    <div class="value">Aarian Bohomolov</div>
 
-        <tr style="height: 15px;"></tr> 
-        
-        <tr>
-            <td>Date of issue:</td>
-            <td>2025-11-27</td>
-        </tr>
-        <tr>
-            <td>Date of expire:</td>
-            <td>2030-11-27</td>
-        </tr>
-    </table>
+    <div class="label">Date of birth of the trainee:</div>
+    <div class="value">2006-04-04</div>
 
+    <div class="label">ID number of the trainee:</div>
+    <div class="value">891331</div>
+
+    <div class="label">Date of issue:</div>
+    <div class="value">2025-11-27</div>
+
+    <div class="label">Date of expire:</div>
+    <div class="value">2030-11-27</div>
+  </div>
 </body>
 </html>
