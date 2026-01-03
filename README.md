@@ -1,1 +1,1 @@
-# verification.admiral.ua
+# verification
